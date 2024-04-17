@@ -4,6 +4,8 @@ Martian Datacentre Modelling Tool
 
 Models communication, uptime, power consumption, and other aspects involved with the design and use of a datacentre on Mars.
 
+Device parameters are stored and read from Devices.csv. If you want to add more devices, you can do this through the UI or directly add them to the csv. When adding a device directly to the csv, only the device name, type, size, power consumption, and MTBF need to be added. The rest of the values are calculated from this.
+
 **Data and modules used from:**
 
  - Ioannis Nasios' solarsystem module (https://github.com/IoannisNasios/solarsystem)
