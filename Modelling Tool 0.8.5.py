@@ -1268,7 +1268,7 @@ def Online():                      # Calculates uptime
             DeviceUp+=(exp(-CritFail[i][1])*(CritFail[i][1]**j))/factorial(j) # Poisson distribution
         Downtime+=CritFail[i][0]*(1-DeviceUp)                                 # Expectation for downtime per hour
 
-    Uptime=1-(Downtime*(1+RunOutChance)/(1-HumanError)) # Scaling for human error and chance of running out of devices
+    Uptime=1-(Downtime*(1+(6*RunOutChance))/(1-HumanError)) # Scaling for human error and chance of running out of devices
 
 def NumReplace():                  # Calculates required number of replacements
     global Replacements
